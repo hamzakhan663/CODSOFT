@@ -26,8 +26,8 @@ A simple calculator application built with Python's tkinter module that allows u
 
 1. **Clone the Repository**:
     ```sh
-    git clone https://github.com/yourusername/multi-project-python.git
-    cd multi-project-python/calculator
+    git clone https://github.com/hamzakhan663/CODSOFT.git
+    cd Calculator
     ```
 
 2. **Run the Application**:
