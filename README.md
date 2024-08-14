@@ -6,7 +6,7 @@ This repository contains different Python projects built during my internship at
 
 ### Project List
 
-1. **Calculator**
+1. **The Calculator**
 2. **Coming Soon**
 3. **Coming Soon**
 
