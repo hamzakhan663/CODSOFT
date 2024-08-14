@@ -18,9 +18,9 @@ A simple calculator application built with Python's tkinter module that allows u
 
 - Primary arithmetic operations
 - Secondary arithmetic operations
-- Decimal and Percentage support
-- Error handling for invalid inputs
-- User-friendly interface with Tkinter
+- Percentage support
+- Error handling
+- User-friendly interface
 
 ### Installation
 
