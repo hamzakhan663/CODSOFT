@@ -27,9 +27,9 @@ def ClearScreen():
 def Delete():
     CurrentEntry = FieldEntry.get()
     if CurrentEntry:  #Check if Entry is not empty
-        NewEntry = CurrentEntry[:-1]  # Remove the last number
+        NewEntry = CurrentEntry[:-1]  #Remove the last number
         FieldEntry.delete(0, END)  
-        FieldEntry.insert(0, NewEntry) # Insert changed entry onto the screen
+        FieldEntry.insert(0, NewEntry) #Insert changed entry onto the screen
 
 #Primary Operation Functions     
 def operations(op):
@@ -94,13 +94,13 @@ def equal():
     
 def percentage():
     global last_result #Declare last result global variable
-    current_value = float(FieldEntry.get()) #get current value
+    current_value = float(FieldEntry.get()) #Get current value
     if not current_value: #Case Handling if field is empty
         FieldEntry.insert(0, "0") 
         return
     
-    result = (last_result * current_value) / 100 #calculate the percentage
-    FieldEntry.delete(0, END) #clear the last result
+    result = (last_result * current_value) / 100 #Calculate the percentage
+    FieldEntry.delete(0, END) #Clear the last result
     
     if result % 1 == 0:
         FieldEntry.insert(0, int(result))  #Display as integer if no decimal part
