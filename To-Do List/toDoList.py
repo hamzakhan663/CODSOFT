@@ -60,29 +60,31 @@ def save():
 
 CheckVariable = IntVar
 
-FirstCheckBox = Checkbutton(root, text=Listbox.curselection(), variable=CheckVariable)
+
     
 FirstLabel = Label(root, text="Input New Task")
 FirstEntry = Entry(root, border=3, justify="left", width = 64, bd=3, relief="raised")
 FirstListBox = Listbox(root, width=100, height=10, border=None, activestyle="none", font = ("Century", 12), background="#22828A", selectbackground= "#1E2C45" , selectforeground="White")
 
+FirstCheckBox = Checkbutton(root, text=Listbox.curselection(), variable=CheckVariable)
 
 FirstButton = Button(root, text = "Add Task", width=20, command= lambda: on_click("ADD"), bd=3, relief="raised", bg="#8256B1")
 SecondButton = Button(root, text = "Edit Task", width=20, command= lambda: on_click("EDIT"), bd=3, relief="raised")
 ThirdButton = Button(root, text = "Delete Task", width=20, command= lambda: on_click("DELETE"), bd=3, relief="raised")
 FourthButton = Button(root, text = "Save Task", width=10, command= save, bd=3, relief="raised")
-EmptyLabel = Label(root, text = "")
+
 
 
 
 FirstLabel.grid(row = 0, columnspan=3)
 FirstEntry.grid(row=1, columnspan=3)
-FirstListBox.grid(row=2, columnspan=3)
+FirstListBox.grid(row=2, columnspan=3
+                  )
 FirstCheckBox.grid(row = 3, column=1)
+
 FirstButton.grid(row=3, column=0)
 SecondButton.grid(row=3, column=1)
 ThirdButton.grid(row=3, column=2)
-EmptyLabel.grid(row=4, column=1)
 FourthButton.grid(row=5, column=1)
 
 root.mainloop()
