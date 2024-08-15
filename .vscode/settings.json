@@ -1,5 +1,6 @@
 {
     "cSpell.words": [
+        "activestyle",
         "Codsoft",
         "columnspan",
         "HAMZAT",
@@ -8,6 +9,8 @@
         "pady",
         "pngtree",
         "rowspan",
+        "selectbackground",
+        "selectforeground",
         "squareroot",
         "textvariable"
     ]
