@@ -6,9 +6,9 @@ This repository contains different Python projects built during my internship at
 
 ### Project List
 
-1. **The Calculator**
-2. **Coming Soon**
-3. **Coming Soon**
+1. **CALCULATOR**
+2. **TO-DO LIST**
+3. **PASSWORD GENERATOR**
 
 ## Calculator
 
@@ -33,4 +33,21 @@ A simple calculator application built with Python's tkinter module that allows u
 2. **Run the Application**:
     ```sh
     python calculator.py
+    ```
+
+## To-Do list
+
+This is a simple application that allows users input, update, and delete tasks when done.
+
+### Installation
+
+1. **Clone the Repository**:
+    ```sh
+    git clone https://github.com/hamzakhan663/CODSOFT.git
+    cd CODSOFT/To-Do List
+    ```
+
+2. **Run the Application**:
+    ```sh
+    python toDoList.py
     ```
