@@ -19,7 +19,7 @@ This is a simple application that helps users manage and organize their tasks ef
 1. **Clone the Repository**:
     ```sh
     git clone https://github.com/hamzakhan663/CODSOFT.git
-    cd CODSOFT/To-Do List
+    cd CODSOFT/codsoft_𝒕𝒂𝒔𝒌𝒏𝒐1
     ```
 
 2. **Run the Application**:
@@ -46,7 +46,7 @@ A simple calculator application built with Python's tkinter module that allows u
 1. **Clone the Repository**:
     ```sh
     git clone https://github.com/hamzakhan663/CODSOFT.git
-    cd CODSOFT/Calculator
+    cd CODSOFT/codsoft_𝒕𝒂𝒔𝒌𝒏𝒐2
     ```
 
 2. **Run the Application**:
