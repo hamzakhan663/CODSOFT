@@ -1,13 +1,6 @@
 from tkinter import *
 
-root = Tk()
-root.title("To-Do List App")
-img = PhotoImage(file = "To-Do List/icons8-todo-list-64.png")
-root.iconphoto(False, img)
-
-selected_index = None
-is_editing = False
-
+#Functions
 def on_click(TaskOperation):
     global selected_index, is_editing
     operation = TaskOperation
@@ -58,29 +51,39 @@ def save():
         selected_index = None  # Reset the selected index
         is_editing = False
 
-CheckVariable = IntVar
+
+#Create the main widget
+root = Tk()
+root.title("To-Do List App")
+img = PhotoImage(file = "To-Do List/icons8-todo-list-64.png")
+root.iconphoto(False, img)
+
+selected_index = None
+is_editing = False
 
 
-    
+#Widgets Initialization   
 FirstLabel = Label(root, text="Input New Task")
+SecondLabel = Label(root, text="")
 FirstEntry = Entry(root, border=3, justify="left", width = 64, bd=3, relief="raised")
 FirstListBox = Listbox(root, width=100, height=10, border=None, activestyle="none", font = ("Century", 12), background="#22828A", selectbackground= "#1E2C45" , selectforeground="White")
 
-FirstCheckBox = Checkbutton(root, text=Listbox.curselection(), variable=CheckVariable)
+
+
 
 FirstButton = Button(root, text = "Add Task", width=20, command= lambda: on_click("ADD"), bd=3, relief="raised", bg="#8256B1")
 SecondButton = Button(root, text = "Edit Task", width=20, command= lambda: on_click("EDIT"), bd=3, relief="raised")
-ThirdButton = Button(root, text = "Delete Task", width=20, command= lambda: on_click("DELETE"), bd=3, relief="raised")
+ThirdButton = Button(root, text = "Delete Task", width=20, command= lambda: on_click("DELETE"), bd=3, relief="raised", bg="#8256B1")
 FourthButton = Button(root, text = "Save Task", width=10, command= save, bd=3, relief="raised")
 
 
 
-
+#App Layout
 FirstLabel.grid(row = 0, columnspan=3)
+SecondLabel.grid(row = 4, columnspan=1)
 FirstEntry.grid(row=1, columnspan=3)
-FirstListBox.grid(row=2, columnspan=3
-                  )
-FirstCheckBox.grid(row = 3, column=1)
+FirstListBox.grid(row=2, columnspan=3)
+
 
 FirstButton.grid(row=3, column=0)
 SecondButton.grid(row=3, column=1)
