@@ -6,9 +6,9 @@ This repository contains different Python projects built during my internship at
 
 ### Project List
 
-1. **CALCULATOR**
-2. **TO-DO LIST**
-3. **PASSWORD GENERATOR**
+1. **The Calculator**
+2. **The To-do list**
+3. **The Password Generator**
 
 ## Calculator
 
