@@ -2,6 +2,7 @@ from tkinter import *
 
 #Functions
 def on_click(TaskOperation):
+    #Create two global variables, one for selected tasks and the other for the state of editing in program
     global selected_index, is_editing
     operation = TaskOperation
     if operation == "ADD":
@@ -12,7 +13,7 @@ def on_click(TaskOperation):
             NewTask = FirstEntry.get()
             FirstListBox.insert(0, NewTask)
             FirstEntry.delete(0, END)
-            is_editing = False
+            is_editing = False #Button returns back to its normal functionality when editing is not taking place
         else:
             return
         
@@ -20,10 +21,10 @@ def on_click(TaskOperation):
         if is_editing:
             # If already editing, don't do anything
             return
-        selected_index = FirstListBox.curselection()
-        if selected_index:
-            for index in reversed(selected_index):
-                FirstListBox.delete(index)
+        selected_index = FirstListBox.curselection() #Assign selected task to variable
+        if selected_index: #If task is in selection
+            for index in reversed(selected_index): 
+                FirstListBox.delete(index) #delete task
                 
                 
                 
@@ -31,13 +32,13 @@ def on_click(TaskOperation):
         if is_editing:
             # If already editing, don't do anything
             return
-        selected_indices = FirstListBox.curselection()
+        selected_indices = FirstListBox.curselection() #Assign selected tasks to variable
         if selected_indices:
-            selected_index = selected_indices[0]
-            SelectedTask = FirstListBox.get(selected_index)
-            FirstEntry.delete(0, END)
-            FirstEntry.insert(0, SelectedTask)
-            is_editing = True
+            selected_index = selected_indices[0] #Assign first item in tuple to variable
+            SelectedTask = FirstListBox.get(selected_index) #Assign text in selected index to variable
+            FirstEntry.delete(0, END) #Clear Entry Field
+            FirstEntry.insert(0, SelectedTask) #Insert text in first index into entry field
+            is_editing = True #global variable is_editing is true meaning editing is ongoing
        
         
 def save():       
@@ -90,4 +91,6 @@ SecondButton.grid(row=3, column=1)
 ThirdButton.grid(row=3, column=2)
 FourthButton.grid(row=5, column=1)
 
+
+#Run program loop
 root.mainloop()
