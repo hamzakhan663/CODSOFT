@@ -35,6 +35,8 @@ A simple calculator application built with Python's tkinter module that allows u
     python calculator.py
     ```
 
+
+
 ## To-Do list
 
 This is a simple application that allows users input, update, and delete tasks when done.
