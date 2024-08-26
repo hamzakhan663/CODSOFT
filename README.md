@@ -39,7 +39,7 @@ A simple calculator application built with Python's tkinter module that allows u
 
 ## To-Do list
 
-This is a simple application that allows users input, update, and delete tasks when done.
+This is a simple application that helps users manage and organize their tasks efficiently by allowing them create, update, and track their to-do lists.
 
 ### Installation
 
