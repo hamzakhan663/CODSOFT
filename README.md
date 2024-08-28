@@ -72,3 +72,34 @@ generate a password of the specified length and then prints the generated passwo
     ```sh
     python passwordgenerator.py
     ```
+
+
+## Rock-Paper-Scissors Game
+
+A familiar game where user is prompted to pick either rock, paper or scissors. A random choice (rock, paper, or scissors) is generated for the computer. The winner is determined based on the user's choice and the computer's choice. Rock beats scissors, scissors beat paper, and paper beats rock. Result is displayed showing whether the game resulted in the user's victory, computer's victory or a tie. 
+
+### Features
+
+- Available in both console and GUI format
+- Score Tracking
+- Multiple Rounds Allowed
+- Error handling
+- User-friendly interface
+
+### Installation
+
+1. **Clone the Repository**:
+    ```sh
+    git clone https://github.com/hamzakhan663/CODSOFT.git
+    cd CODSOFT/codsoft_taskno4
+    ```
+
+2. **Run the Application**:
+    ```sh
+    python ConsoleRPS.py
+    ```
+    or
+    ```sh
+    python GraphicRPS.py
+    ```
+   
