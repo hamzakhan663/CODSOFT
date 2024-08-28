@@ -56,7 +56,7 @@ def save():
 #Create the main widget
 root = Tk()
 root.title("To-Do List App")
-img = PhotoImage(file = "To-Do List/icons8-todo-list-64.png")
+img = PhotoImage(file = "codsoft_taskno1/icons8-todo-list-64.png")
 root.iconphoto(False, img)
 
 selected_index = None

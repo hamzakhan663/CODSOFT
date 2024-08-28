@@ -6,7 +6,7 @@ from math import sqrt
 
 root = Tk()
 root.title("Simple Calculator App") #Change GUI title
-img = PhotoImage(file = "Calculator/icons8-calculator-64.png") #Change GUI PhotoImage
+img = PhotoImage(file = "codsoft_taskno2/icons8-calculator-64.png") #Change GUI PhotoImage
 root.iconphoto(False, img)
 
 

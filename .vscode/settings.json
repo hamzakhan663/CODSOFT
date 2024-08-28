@@ -4,6 +4,7 @@
         "checkvar",
         "Codsoft",
         "columnspan",
+        "databook",
         "HAMZAT",
         "offvalue",
         "oneover",
@@ -15,6 +16,8 @@
         "selectbackground",
         "selectforeground",
         "squareroot",
-        "textvariable"
+        "taskno",
+        "textvariable",
+        "wraplength"
     ]
 }
