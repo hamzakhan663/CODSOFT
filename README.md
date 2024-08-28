@@ -19,7 +19,7 @@ This is a simple application that helps users manage and organize their tasks ef
 1. **Clone the Repository**:
     ```sh
     git clone https://github.com/hamzakhan663/CODSOFT.git
-    cd CODSOFT/codsoft_𝒕𝒂𝒔𝒌𝒏𝒐1
+    cd CODSOFT/codsoft_taskno1
     ```
 
 2. **Run the Application**:
@@ -46,10 +46,28 @@ A simple calculator application built with Python's tkinter module that allows u
 1. **Clone the Repository**:
     ```sh
     git clone https://github.com/hamzakhan663/CODSOFT.git
-    cd CODSOFT/codsoft_𝒕𝒂𝒔𝒌𝒏𝒐2
+    cd CODSOFT/codsoft_taskno2
     ```
 
 2. **Run the Application**:
     ```sh
     python calculator.py
+    ```
+
+## Password Generator
+
+A useful tool that generates strong and random passwords for users. Prompts the user to specify the desired length of the password, uses a combination of random characters to
+generate a password of the specified length and then prints the generated password on the screen.
+
+### Installation
+
+1. **Clone the Repository**:
+    ```sh
+    git clone https://github.com/hamzakhan663/CODSOFT.git
+    cd CODSOFT/codsoft_taskno3
+    ```
+
+2. **Run the Application**:
+    ```sh
+    python passwordgenerator.py
     ```
