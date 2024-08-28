@@ -98,7 +98,7 @@ A familiar game where user is prompted to pick either rock, paper or scissors. A
     ```sh
     python ConsoleRPS.py
     ```
-    OR
+    or
     ```sh
     python GraphicRPS.py
     ```
