@@ -10,6 +10,7 @@ This repository contains different Python projects built during my internship at
 2. **The Calculator**
 3. **The Password Generator**
 4. **The Rock-Paper-Scissors Game**
+5. **The Contact Book**
 
 ## To-Do list
 
