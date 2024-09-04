@@ -1,5 +1,6 @@
 from tkinter import *
 
+
 #Functions
 def on_click(TaskOperation):
     #Create two global variables, one for selected tasks and the other for the state of editing in program
@@ -38,19 +39,24 @@ def on_click(TaskOperation):
             SelectedTask = FirstListBox.get(selected_index) #Assign text in selected index to variable
             FirstEntry.delete(0, END) #Clear Entry Field
             FirstEntry.insert(0, SelectedTask) #Insert text in first index into entry field
+            SecondButton.config(text="Save Changes", command=save)
             is_editing = True #global variable is_editing is true meaning editing is ongoing
+            
        
-        
-def save():       
+    
+def save(): 
     global selected_index, is_editing
+    original_task = FirstListBox.get(selected_index)      
+    
     if selected_index is not None:
         EditedTask = FirstEntry.get()
-        if EditedTask:
+        if EditedTask != original_task:
             FirstListBox.delete(selected_index)  # Remove the old task
             FirstListBox.insert(selected_index, EditedTask)  # Insert the updated task
-        FirstEntry.delete(0, END)  # Clear the Entry widget
-        selected_index = None  # Reset the selected index
-        is_editing = False
+            FirstEntry.delete(0, END)  # Clear the Entry widget
+            selected_index = None  # Reset the selected index
+            SecondButton.config(text = "Edit Task", command = lambda: on_click("EDIT"))
+            is_editing = False
 
 
 #Create the main widget
@@ -75,7 +81,7 @@ FirstListBox = Listbox(root, width=100, height=10, border=None, activestyle="non
 FirstButton = Button(root, text = "Add Task", width=20, command= lambda: on_click("ADD"), bd=3, relief="raised", bg="#8256B1")
 SecondButton = Button(root, text = "Edit Task", width=20, command= lambda: on_click("EDIT"), bd=3, relief="raised")
 ThirdButton = Button(root, text = "Delete Task", width=20, command= lambda: on_click("DELETE"), bd=3, relief="raised", bg="#8256B1")
-FourthButton = Button(root, text = "Save Task", width=10, command= save, bd=3, relief="raised")
+
 
 
 
@@ -89,7 +95,7 @@ FirstListBox.grid(row=2, columnspan=3)
 FirstButton.grid(row=3, column=0)
 SecondButton.grid(row=3, column=1)
 ThirdButton.grid(row=3, column=2)
-FourthButton.grid(row=5, column=1)
+
 
 
 #Run program loop
