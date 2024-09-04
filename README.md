@@ -103,4 +103,32 @@ A familiar game where user is prompted to pick either rock, paper or scissors. A
     ```sh
     python GraphicRPS.py
     ```
+
+## Contact Book
+
+A contact book that allows users to store name, phone number, email, and address for each contact. It allows users to add new contacts with their details. It also allows users to view contact information, delete contact and update contact. Users can also search for contacts based on name or phone number.
+
+### Features
+
+- Saved Contacts List
+- Delete Functionality
+- Update Functionality
+- Search Functionality
+- Error handling
+- User-friendly interface
+
+### Installation
+
+1. **Clone the Repository**:
+    ```sh
+    git clone https://github.com/hamzakhan663/CODSOFT.git
+    cd CODSOFT/codsoft_taskno5
+    ```
+
+2. **Run the Application**:
+    ```sh
+    python contactbook.py
+    ```
+    
    
+
